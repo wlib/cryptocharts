@@ -1,0 +1,21 @@
+{
+  "name": "cryptocharts",
+  "description": "CryptoCharts.us",
+  "version": "0.0.0",
+  "author": "Daniel Ethridge <danielethridge@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "preact": "8.2.5",
+    "preact-router": "^2.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-preact": "^1.1.0",
+    "node-sass": "^4.5.3",
+    "parcel-bundler": "^1.2.0"
+  },
+  "scripts": {
+    "build": "parcel build ./src/index.js"
+  }
+}

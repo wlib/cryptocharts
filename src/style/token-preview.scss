@@ -1,0 +1,72 @@
+.token-preview {
+  background-color: #fff;
+  color: #4a4a4a;
+  margin: 0.5rem;
+  padding: 2rem;
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.15));
+}
+
+.token-preview:hover {
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+@media screen and (min-width: 400px) {
+  .token-preview {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .token-preview {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .token-preview {
+    width: 25%;
+  }
+}
+
+.token-preview .media {
+  display: flex;
+}
+
+.token-preview .icon {
+  margin: 0;
+  margin-right: 1rem;
+}
+
+.token-preview .info {
+  text-align: left;
+}
+
+.token-preview .title {
+  color: #363636;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.token-preview .subtitle {
+  line-height: 1.25;
+  margin: 0;
+}
+
+.token-preview .sparkline {
+  filter: hue-rotate(150deg) contrast(10);
+  width: 100%;
+}
+
+.token-preview .green {
+  color: #23d160;
+}
+
+.token-preview .red {
+  color: #ff3860;
+}
+
+.token-preview .gray {
+  color: #7a7a7a;
+}

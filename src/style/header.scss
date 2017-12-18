@@ -1,0 +1,42 @@
+nav {
+	display: flex;
+	font-size: 2rem;
+	align-items: center;
+}
+
+nav li {
+	padding: 0;
+	margin: 2%;
+	list-style: none;
+}
+
+nav .title {
+	flex-grow: 1;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 00px) {
+  nav .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  nav .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  nav .title {
+    font-size: 3rem;
+  }
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0;
+}

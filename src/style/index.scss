@@ -1,0 +1,26 @@
+@import "./header";
+@import "./tabs";
+@import "./token-preview";
+@import "./token-preview-list";
+@import "./chart";
+@import "./misc";
+
+html, body {
+	font-family: Monaco, Menlo, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #444;
+	max-width: 100%;
+	height: 100%;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #3273dc;
+}

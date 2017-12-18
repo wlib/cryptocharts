@@ -1,0 +1,32 @@
+.tabs {
+  user-select: none;
+  margin-bottom: 1.5rem;
+}
+
+.tabs ul {
+  justify-content: center;
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  display: flex;
+  padding: 0;
+}
+
+.tabs li {
+  list-style: none;
+}
+
+.tabs a {
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #4a4a4a;
+  display: flex;
+  margin-bottom: -1px;
+  padding: .5em 1em;
+}
+
+.tabs a.active {
+  color: #00acea;
+  border-bottom-color: #00acea;
+}
