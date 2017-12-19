@@ -26,6 +26,7 @@ export default class Index extends Component {
       <div>
         <Header
           title="CryptoCharts"
+          iconRight="⋮"
           marketCap={globalData.total_market_cap_usd}
           volume={globalData.total_24h_volume_usd}
         />

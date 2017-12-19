@@ -5,8 +5,10 @@
 @import "./chart";
 @import "./misc";
 
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700");
+
 html, body {
-	font-family: Monaco, Menlo, sans-serif;
+	font-family: "Roboto Mono", Monaco, Menlo, sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;

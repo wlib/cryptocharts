@@ -23,11 +23,38 @@ export default class Token extends Component {
     });
   }
 
-  render(props, { token }) {
+  render({ tokenID }, { token }) {
+    const back = () => history.go(-1);
+
+    const togglePinned = () => {
+      const i = settings.pinned.indexOf(tokenID);
+      if (i > -1) {
+        // Remove
+        settings.pinned = settings.pinned.filter(id => id != tokenID);
+      } else {
+        // Add
+        settings.pinned = settings.pinned.concat(tokenID);
+      }
+      this.forceUpdate();
+    };
+
+    let iconRight = "☆";
+    if (settings.pinned.includes(tokenID)) {
+      iconRight = "★";
+    }
+
     return (
       <div class="token">
-        <Header title={ token.name } marketCap={ token.market_cap_usd } volume={ token["24h_volume_usd"] }/>
-        <Chart symbol={ token.symbol }></Chart>
+        <Header
+          title={token.name}
+          iconLeft="◂"
+          iconLeftAction={back}
+          iconRight={iconRight}
+          iconRightAction={togglePinned}
+          marketCap={token.market_cap_usd}
+          volume={token["24h_volume_usd"]}
+        />
+        <Chart symbol={token.symbol} />
       </div>
     );
   }

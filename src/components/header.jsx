@@ -2,20 +2,23 @@ import { Component, h } from "preact";
 import { format } from "../api";
 
 export default class Header extends Component {
-  render({ title, marketCap, volume }) {
-    const back = () => history.go(-1);
+  render(props) {
     return (
       <header>
         <nav>
-          <li class="back click" onClick={ back }>◂</li>
-          <li class="title">{ title }</li>
-          <li class="options click">⋮</li>
+          <li class="icon-left click" onClick={props.iconLeftAction}>
+            {props.iconLeft}
+          </li>
+          <li class="title">{props.title}</li>
+          <li class="icon-right click" onClick={props.iconRightAction}>
+            {props.iconRight}
+          </li>
         </nav>
         <dl>
           <dt>Market Cap</dt>
-          <dd>{ format(marketCap) }</dd>
+          <dd>{format(props.marketCap)}</dd>
           <dt>Today's Volume</dt>
-          <dd>{ format(volume) }</dd>
+          <dd>{format(props.volume)}</dd>
         </dl>
       </header>
     );
