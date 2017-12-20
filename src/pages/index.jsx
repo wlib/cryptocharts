@@ -17,6 +17,11 @@ export default class Index extends Component {
   }
 
   render(props, { globalData = {}, tickerData = [] }) {
+    const toggleNight = () => {
+      settings.night = !settings.night;
+      document.body.classList.toggle("night");
+    }
+
     const topTokens = tickerData.slice(0, settings.limit);
     const pinnedTokens = tickerData.filter(token =>
       settings.pinned.includes(token.id)
@@ -27,6 +32,7 @@ export default class Index extends Component {
         <Header
           title="CryptoCharts"
           iconRight="⋮"
+          iconRightAction={toggleNight}
           marketCap={globalData.total_market_cap_usd}
           volume={globalData.total_24h_volume_usd}
         />

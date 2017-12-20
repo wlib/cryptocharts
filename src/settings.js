@@ -45,4 +45,12 @@ export default new class Settings {
   set pinned(value) {
     return persistSet("pinned", value);
   }
+
+  get night() {
+    return persistGet("night") || false;
+  }
+
+  set night(value) {
+    return persistSet("night", value);
+  }
 }();

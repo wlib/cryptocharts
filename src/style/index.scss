@@ -7,6 +7,11 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700");
 
+body.night {
+	background-color: #1b1b1b;
+  color: #bbb;
+}
+
 html, body {
 	font-family: "Roboto Mono", Monaco, Menlo, sans-serif;
 	font-size: 1rem;

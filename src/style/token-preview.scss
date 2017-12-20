@@ -1,6 +1,10 @@
+body.night .token-preview {
+  background-color: inherit
+}
+
 .token-preview {
   background-color: #fff;
-  color: #4a4a4a;
+  color: inherit;
   margin: 0.5rem;
   padding: 2rem;
   width: 100%;
@@ -43,7 +47,6 @@
 }
 
 .token-preview .title {
-  color: #363636;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
