@@ -12,12 +12,13 @@
     "babel-core": "^6.26.0",
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-preact": "^1.1.0",
+    "http-server-spa": "^1.2.0",
     "node-sass": "^4.5.3",
     "parcel-bundler": "^1.2.0"
   },
   "scripts": {
     "build": "parcel build ./src/index.js",
     "dev": "parcel watch ./src/index.js --no-hmr",
-    "server": "python -m SimpleHTTPServer"
+    "serve": "http-server-spa ./"
   }
 }

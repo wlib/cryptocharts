@@ -1,4 +1,5 @@
 import { render, h } from "preact";
+import "preact/devtools";
 import App from "./App";
 export default App;
 import settings from "./settings";

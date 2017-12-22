@@ -5,6 +5,7 @@ import settings from "../settings";
 import Header from "../components/header";
 import Tabs from "../components/tabs";
 import TokenPreviewList from "../components/token-preview-list";
+//import SearchPage from "./search";
 
 export default class Index extends Component {
   async componentDidMount() {
@@ -40,6 +41,7 @@ export default class Index extends Component {
         <Router>
           <TokenPreviewList default path="/top" tickerData={topTokens} />
           <TokenPreviewList path="/pinned" tickerData={pinnedTokens} />
+{/*          <SearchPage path="/search" /> */}
         </Router>
       </div>
     );
